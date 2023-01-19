@@ -1,0 +1,8 @@
+NW NE NW N NS N N N 
+W O O O NE.GB W O O 
+W O O O O O O O 
+EW SE.RT O O O O O O 
+W N O O O S O O 
+SW O O O E NW.YP O O 
+NW O O ES.BC W O O S 
+W O O N O O E NW 

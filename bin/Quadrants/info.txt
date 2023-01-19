@@ -1,0 +1,75 @@
+Ett giltigt bräde i Riccochet Robots består av 4 kvadranter,
+där samtliga kvadranter ingår i olika kvadrantgrupper.
+
+Det finns 4 kvadrantgrupper: A, B, C och D.
+Samtliga kvadranter som ingår i en och samma kvadrantgrupp innehåller samma uppsättning av tokens,
+och inga tokens som ingår i de kvadranter som en kvadrantgrupp utgör ingår i någon annan kvadrant som någon annan kvadrantgrupp innehåller.
+
+Kvadrantgrupperna definieras av att
+
+	A innehåller kvadranter som innehåller den Röda planet-tokenen
+	B innehåller kvadranter som innehåller den Gröna planet-tokenen
+	C innehåller kvadranter som innehåller den Blåa planet-tokenen
+	D innehåller kvadranter som innehåller den Gula planet-tokenen
+
+	Minnesregel: ABCD -> RGBY
+
+
+
+Varje kvadrantgrupp (A, B, C och D) innehåller 4 kvadranter (som kallas kvadrantvarianter).
+Kvadrantgrupp A innehåller t.ex. kvadrantvarianterna A1, A2, A3 och A4, där
+
+	A4 är kvadrantvarianten med studs-hörn,
+	och ordningen för de resterande kvadrantvarianterna (A1, A2 och A3) bestäms av avståndet som respektive kvadrantvariants planet-token har till respektive kvadrantvariants hörn,
+	på ett sådant sätt att t.ex. A1 är den kvadrantvariant där A1´s planet-token har det lägsta avståndet till A1´s hörn (3),
+	A2´s planet-token har det näst lägsta avståndet (6) och A3's planet-token har det längsta avståndet (9),
+	där "avstånd" avser manhattan-avståndet.
+
+
+
+Ett exempel på ett giltligt bräde är brädet som innehåller kvadranterna A2, B3, C1 och D2.
+Respektive kvadrants rotation spelar även roll, vilket uttrycks genom att t.ex. brädet
+
+A2  D2
+  x
+C1  B3
+
+där x är mittenblocket,
+representeras av strängen A2-D2-B3-C1 (börjar i översta vänstra kvadranten, och går sedan klockans håll).
+
+
+
+Varje kvadrant är lagrad som en textfil, där kvadranten är orienterad på ett sådant sätt att kvadrantens hörn är uppe till vänster.
+Varje kvadrant består sedan av tiles, där varje tile representeras av en sträng som anger hur varje tiles väggar är orienterade.
+
+Tilen som har väggarna _| represetneras t.ex. av strängen "ES" (vilket står för east-south),
+och tilen som har väggarna |_ representeras t.ex. av stängen "SW" (vilket står för south-west),
+och generellt skrivs ordningen på väggarna i strängform i ordningen: north, east, south, west.
+Om en tile inte har några väggar, representeras den av strängen "O".
+
+
+
+Tokensen representeras av följande bokstäver:
+	Planet = P
+	Compass = C
+	Triangle = T
+	Ball = B
+	Black hole = H
+
+och tokensens färger representeras av följande bokstäver:
+	Red = R
+	Green = G
+	Blue = B
+	Yellow = Y
+	Black Hole = H
+
+Tiles som innehåller tokens representeras genom att en ändelse läggs till på strängen som representerar väggarnas orientering.
+En tile som t.ex. har väggarna |_ och innehåller tokenen "Red Planet" representeras av strängen "SW.RP".
+
+
+
+
+
+
+
+
