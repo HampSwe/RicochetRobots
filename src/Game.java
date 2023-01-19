@@ -16,13 +16,8 @@ public class Game {
 		tokenPattern = this.tokenPattern();
 	}
 	
-	
-	
 
 	public void run() {
-		
-		
-		
 		
 		int move = 0;
 		Boolean win = false;
