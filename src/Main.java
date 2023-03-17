@@ -172,15 +172,15 @@ public class Main {
 		
 		
 		while (true) {
-		g.drawBackground();
-		text.setSpace(5,3);
-		text.basic("riccochet", 362, 374, Colors.YELLOW, 1);
-		text.basic("robots", 370, 385, Colors.YELLOW, 1);
+			g.drawBackground();
+			text.setSpace(5,3);
+			text.basic("riccochet", 362, 374, Colors.YELLOW, 1);
+			text.basic("robots", 370, 385, Colors.YELLOW, 1);
 		
-		//world.initWorld();
-		world.drawWorld();
-		game.run();
-	}
+			//world.initWorld();
+			world.drawWorld();
+			game.run();
+		}
 		
 		
 		
